@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+  <meta charset="UTF-8">
+  <title>BloxdHub</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="Capture d’écran du 2025-08-29 18-38-30.png">
+
+</head>
+<audio id="bg-music" loop>
+  <source src="game-gaming-minecraft-background-music-377647.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-btn">🎵 Play</button>
+
+<script>
+
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "Stop";
+    } else {
+      music.pause();
+      btn.textContent = "🎵 Play";
+      
+    }
+  });
+  
+</script>
+<style>
+        
+        body {
+  background-color: #111;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #0a74da;
+}
+
+p {
+  color: #666;
+}
+
+.lien-gamer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.lien-gamer a {
+  background-color: #222;
+  border: 2px solid #00ffff;
+  color: #0ff;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+.lien-gamer a:hover {
+  background-color: #00ffff;
+  color: #111;
+  box-shadow: 0 0 10px #0ff;
+}
+ #music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    background: #001a33;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00ccff;
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #0088cc inset;
+    transition: all 0.25s ease;
+  }
+
+  #music-btn:hover {
+    background: #002244;
+    transform: scale(1.15);
+    box-shadow: 0 0 25px #00ccff, 0 0 50px #00aaff inset;
+  }
+         header {
+      padding: 40px;
+      text-align: center;
+      background-color: #111;
+      box-shadow: 0 0 20px #00F0FF;
+    }
+     footer {
+      background-color: #292929;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #888;
+    }
+        form {
+      margin-bottom: 20px;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #00ffff;
+      border-radius: 8px;
+      background: #222;
+      color: #0ff;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #00ffff;
+      color: #111;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0ff;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    comments-section {
+      margin-top: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    #comments-section p {
+      border-bottom: 1px solid #333;
+      padding: 8px 0;
+    }
+    </style>
+<body>
+  <header>
+    <h1>Bloxd.io - PvP Zone</h1>
+    <p>Combats, techniques, stratégies, enchaînements</p>
+
+    <div class="lien-gamer">
+      <a href="page 1.html#1E">Présentation</a>
+      <a href="numero2.html#2E">Comment ça marche ?</a>
+      <a href="page3.html#4E">PvP : Deviens un maître</a>
+     <a href="page5.html#11E">Enchantements</a>
+      <a href="page6.html#6E">Modes de jeu</a>
+      <a href="page7.html#7E">Astuces / Tips</a>
+      <a href="page8.html#8E">Items rares</a>
+      <a href="page9.html#9E">La commu</a>
+      <a href="page10.html#10E">Lexique</a>
+      <a href="page4.html#5E"> Commentaires </a>
+    </div>
+  </header><br>
+
+
+<main>
+    <section id="comments">
+    <h2>Les commentaires</h2>
+    <p>N'hésite pas à commenter pour les prochaines mises à jour/idées (ou juste me dire que t'as aimé 🤗).</p>
+
+    <form id="comment-form" autocomplete="off">
+      <input type="text" id="username" placeholder="Ton pseudo Bloxd.io" required>
+      <textarea id="comment" placeholder="Ton commentaire" rows="4" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div id="comments-section">
+      <h3>Commentaires :</h3>
+    </div>
+  </section>
+
+ 
+</main>
+
+
+
+
+</section>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAihCzQOSJX8-9fRrnvjQbsXB1P1XrrAPk",
+    authDomain: "bloxdhub-comments.firebaseapp.com",
+    databaseURL: "https://bloxdhub-comments-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "bloxdhub-comments",
+    storageBucket: "bloxdhub-comments.appspot.com",
+    messagingSenderId: "576030771439",
+    appId: "1:576030771439:web:13a04d13c4501fcf50331a",
+    measurementId: "G-578S8ZL25S"
+  };
+
+  // ⚠️ initialise UNE SEULE FOIS
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
+  const db = firebase.database();
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) =>
+    ('' + s).replace(/[<&>]/g, c => ({
+      '<': '&lt;',
+      '>': '&gt;',
+      '&': '&amp;'
+    }[c]));
+
+  const form = $('comment-form');
+  const commentsSection = $('comments-section');
+
+  if (!form || !commentsSection) {
+    console.warn("Formulaire ou section commentaires introuvable");
+    return;
+  }
+
+  // 🔄 affichage temps réel
+  db.ref('comments').on('child_added', snapshot => {
+    const data = snapshot.val() || {};
+    const p = document.createElement('p');
+    p.innerHTML = `<strong>${esc(data.username || 'Anonyme')}</strong> : ${esc(data.text || '')}`;
+    commentsSection.appendChild(p);
+  });
+
+  // 📤 envoi du commentaire
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const username = $('username').value.trim();
+    const comment  = $('comment').value.trim();
+
+    if (!username || !comment) return;
+    if (comment.length > 500) {
+      alert('Commentaire trop long (max 500 caractères).');
+      return;
+    }
+
+    db.ref('comments').push({
+      username,
+      text: comment,
+      createdAt: Date.now()
+    }).then(() => form.reset())
+      .catch(err => {
+        console.error(err);
+        alert("Erreur d'envoi");
+      });
+  });
+
+});
+</script>
+
+
+<footer style="text-align:center; font-size: 14px; color: #aaa; padding: 15px; background-color: #111;">
+  Codé de A à Z par <strong>Unknown0x / Moto78</strong>
+</footer>
+

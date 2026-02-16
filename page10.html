@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+  <meta charset="UTF-8">
+  <title>BloxdHub</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="Capture d’écran du 2025-08-29 18-38-30.png">
+
+</head>
+<audio id="bg-music" loop>
+  <source src="game-gaming-minecraft-background-music-377647.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-btn">🎵 Play</button>
+
+<script>
+
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "Stop";
+    } else {
+      music.pause();
+      btn.textContent = "🎵 Play";
+      
+    }
+  });
+  
+</script>
+<style>
+        
+        body {
+  background-color: #111;
+  color: #0ff;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color:#0a74da;
+}
+
+p {
+  color: #666;
+}
+
+.lien-gamer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.lien-gamer a {
+  background-color: #222;
+  border: 2px solid #00ffff;
+  color: #0ff;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+.lien-gamer a:hover {
+  background-color: #00ffff;
+  color: #111;
+  box-shadow: 0 0 10px #0ff;
+}
+ #music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    background: #001a33;
+    color: #00aaff;
+    border: 2px solid #00aaff;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00ccff;
+    box-shadow: 0 0 15px #00aaff, 0 0 30px #0088cc inset;
+    transition: all 0.25s ease;
+  }
+
+  #music-btn:hover {
+    background: #002244;
+    transform: scale(1.15);
+    box-shadow: 0 0 25px #00ccff, 0 0 50px #00aaff inset;
+  }
+         header {
+      padding: 40px;
+      text-align: center;
+      background-color: #111;
+      box-shadow: 0 0 20px #00F0FF;
+    }
+     
+    .jeu {
+  color: #2C3E50; 
+  font-weight: bold;
+}
+
+
+
+    </style>
+<body>
+  <header>
+    <h1>BloxdHub</h1>
+    <p>Combats, techniques, stratégies, enchaînements</p>
+
+    <div class="lien-gamer">
+      <a href="page 1.html#1E">Présentation</a>
+      <a href="numero2.html#2E">Comment ça marche ?</a>
+      <a href="page3.html#4E">PvP : Deviens un maître</a>
+      <a href="page5.html#11E">Enchantements</a>
+      <a href="page6.html#6E">Modes de jeu</a>
+      <a href="page7.html#7E">Astuces / Tips</a>
+      <a href="page8.html#8E">Items rares</a>
+      <a href="page9.html#9E">La commu</a>
+      <a href="page10.html#10E">Lexique</a>
+      <a href="page4.html#5E"> Commentaires </a>
+    </div>
+  </header><br>
+  <h2 id="10E">Un lexique / dictionnaire Bloxd.io</h2>
+<p><strong class="jeu">PVP : </strong> <br>Player vs Player. Les fights entre joueurs. La base, sans ça Bloxdio perd la moitié de son sel.<br>
+
+<strong class="jeu">Fight :</strong> <br> “viens duel ?”. Tu liras ça partout. Ça veut dire “on règle ça à la régulière”.<br>
+
+<strong class="jeu">Combo : </strong> <br>Enchaîner les coups sans laisser respirer l’adversaire. Si tu maîtrises ça ... respect!!<br>
+
+<strong class="jeu">CPS (Click Per Second) : </strong> <br>Vitesse à laquelle tu cliques. Plus tu cliques vite, plus tes combos sont violents.<br>
+
+<strong class="jeu">Clutch :</strong> <br> Gagner un fight impossible (genre 1 cœur vs full stuff). Moment où t’as l’impression d’être un dieu.<br>
+
+<strong class="jeu">Stuff :</strong> <br> Ton équipement. C’est ton armure/armes, en gros ta puissance.<br>
+
+<strong class="jeu">Rush :</strong> <br> Aller attaquer direct, souvent sans se préparer trop. Peut être stylé, ou suicidaire.<br>
+
+<strong class="jeu">Spawnkill : </strong> <br>Attaquer quelqu’un dès qu’il réapparaît. <br>
+
+<strong class="jeu">Farm :</strong> <br> Récolter en boucle pour xp ou stuff.<br>
+
+<strong class="jeu">Tryhard :</strong> <br> Jouer à fond, sans pause, transpirer sur ton clavier.<br>
+
+<strong class="jeu">Noob : </strong> <br>Débutant, ou insulte gratuite quand tu tues quelqu’un trop facilement.<br>
+<strong class="jeu">Lag : </strong> <br>Le vrai ennemi des gamers. Quand ça bug, c’est jamais ta faute.<br>
+<strong class="jeu">GG : </strong> <br>Good Game. Politesse de fin de partie (rare).<br>
+
+<strong class="jeu">EZ : </strong> <br>“Facile”. Mode toxique ON.<br>
+
+<strong class="jeu">Bot / Clown : </strong> <br>Façon moderne de dire “mauvais joueur”.<br>
+<strong class="jeu">Kill :  </strong> <br>tout simple, ça veut dire tuer un joueur.<br>
+
+<strong class="jeu">HP : </strong> <br> abréviation de “Health Points”, en gros ta vie. Quand t’as 0 HP… bah t’es plus là, respawn direct.<br>
+
+<strong class="jeu">Give : </strong> <br> donner un objet ou du stuff à un joueur.<br>
+
+<strong class="jeu">Full : </strong> <br> “Full stuff”, ça veut dire être équipé au max (armure complète, enchantements, etc). Quand un gars dit “je suis full”, évite d’aller le tester si toi t’as juste une pelle en bois.<br></p>
+
+</body>
+<footer style="text-align:center; font-size: 14px; color: #aaa; padding: 15px; background-color: #111;">
+  Codé de A à Z par <strong>Unknown0x / Moto78</strong><br>
+  
+</footer>
+</html>
